@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+    <style type="text/css">
+    .row1{
+      background-color: goldenrod;
+      height:8rem;
+    }
+    .col{
+      text-align:right;
+      position:absolute;
+      top: 90px; 
+    }
+    .button{
+      color:white;
+    }
+    .d-block{
+      height: 60vh;
+      width:30%;
+    }
+    .backspace { margin-left: -30px; }
+    .btn:hover
+    {
+      box-shadow:0 5px 10px;
+      transition:0.5s;
+      transform:translateZ(6px);
+    }
+    .btn-outline-warning{
+      color:goldenrod;
+      box-shadow:0 5px 10px;
+      text-decoration: none;
+    }
+    .mybtn:hover{
+      color:black;
+    }
+    body {
+    background: #fbfbfd;
+}
+
+.new_footer_area {
+    background: black;
+}
+
+
+.new_footer_top {
+    padding: 120px 0px 270px;
+    position: relative;
+      overflow-x: hidden;
+}
+.new_footer_area .footer_bottom {
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+.footer_bottom {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: orange;
+    padding: 27px 0px;
+}
+.new_footer_top .company_widget p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: white;
+    margin-bottom: 20px;
+}
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+    border-width: 1px;
+    margin-top: 20px;
+}
+.btn_get_two:hover {
+    background: transparent;
+    color: orange;
+}
+.btn_get:hover {
+    color: orangered;
+    background: orangered;
+    border-color: orangered;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+    color: orange;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+    margin-bottom: 11px;
+}
+.f_widget.about-widget .f_list li:last-child {
+    margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+    margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+}
+.new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+    border: 1px solid #e2e2eb;
+    font-size: 24px;
+}
+.f_social_icon a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 45px;
+    color: #858da8;
+    display: inline-block;
+    background: #ebeef5;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.ti-facebook:before {
+    content: "\e741";
+}
+.ti-twitter-alt:before {
+    content: "\e74b";
+}
+.ti-vimeo-alt:before {
+    content: "\e74a";
+}
+.ti-pinterest:before {
+    content: "\e731";
+}
+
+.btn_get_two {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: orange;
+    border-color: orangered;
+    color: orange;
+    
+}
+
+.btn_get_two:hover {
+    /*background: transparent;*/
+    color: orange;
+}
+
+.new_footer_top .f_social_icon a:hover {
+    background: orange;
+    border-color: orangered;
+  color:white;
+}
+.new_footer_top .f_social_icon a + a {
+    margin-left: 4px;
+}
+.new_footer_top .f-title {
+    margin-bottom: 30px;
+    color: orange;
+}
+.f_600 {
+    font-weight: 600;
+}
+.f_size_18 {
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: orange;
+}
+.new_footer_top .f_widget.about-widget .f_list li a {
+    color: blanchedalmond;
+}
+
+
+.new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigB8iI5tb8WSVBuVUGc9UjjB8O0708X7Fdic_4O1LT4CmLHoiwhanLXiRhe82yw0R7LgACQ2IhZaTY0hhmGi0gYp_Ynb49CVzfmXtYHUVKgXXpWvJ_oYT8cB4vzsnJLe3iCwuzj-w6PeYq_JaHmy_CoGoa6nw0FBo-2xLdOPvsLTh_fmYH2xhkaZ-OGQ/s16000/footer_bg.png") no-repeat scroll center 0;
+    width: 100%;
+    height: 266px;
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia0PYPxwT5ifToyP3SNZeQWfJEWrUENYA5IXM6sN5vLwAKvaJS1pQVu8mOFFUa_ET4JuHNTFAxKURFerJYHDUWXLXl1vDofYXuij45JZelYOjEFoCOn7E6Vxu0fwV7ACPzArcno1rYuVxGB7JY6G7__e4_KZW4lTYIaHSLVaVLzklZBLZnQw047oq5-Q/s16000/volks.gif") no-repeat center center;
+    width: 330px;
+    height: 105px;
+  background-size:100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyLGwEUVwPK6Vi8xXMymsc-ZXVwLWyXhogZxbcXQYSY55REw_0D4VTQnsVzCrL7nsyjd0P7RVOI5NKJbQ75koZIalD8mqbMquP20fL3DxsWngKkOLOzoOf9sMuxlbyfkIBTsDw5WFUj-YJiI50yzgVjF8cZPHhEjkOP_PRTQXDHEq8AyWpBiJdN9SfQA/s16000/cyclist.gif") no-repeat center center;
+    width: 88px;
+    height: 100px;
+  background-size:100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+}
+
+
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*************footer End*****************/
+
+    .row1{
+            background-color: black;
+            height:8.3rem;
+        }
+        .col{
+            text-align:right;
+            position:absolute;
+            top: 95px; 
+        }
+        .button{
+            color:black;
+        }
+        .body-background {
+    height: 100vh;
+    background-image:url("00.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.text-decoration-none{
+    color:black;
+}
+
+.card {
+    width: 400px;
+    border: none;
+
+}
+
+.form-control {
+    height: 45px;
+    border-radius: 10px
+}
+
+.form-control:focus {
+    box-shadow: none
+}
+
+.btn-signup {
+    height: 50px;
+    border-radius: 10px;
+}
+.backspace { margin-left: -30px; }
+.btn-outline-warning{
+      color:gray;
+      box-shadow:0 5px 10px;
+      text-decoration: none;
+    }
+    /*.mybtn:hover{
+     XX color:black;
+    }*/
+
+
+
+    </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body >
+      <div class="row row1">
+    <div class="col-1"><a href="index.html"><img src="LOGO.png"width="310%" height="78%"></a></div>
+    <div class="col">
+      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <button type="button" class="btn  btn-warning"><a class="button mybtn"href="index.html"
+    style="text-decoration:none;">Home</a></button>
+  
+  <button type="button" class="btn  btn-warning"><a class="button mybtn"href="bookbank.html" style="text-decoration:none;">Book Banks</a></button>
+  <button type="button" class="btn  btn-warning"><a class="button mybtn"href="contactus.html" style="text-decoration:none;">Contact Us</a></button>
+  <form class="form-inline">
+      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn  btn-warning btn- my-2 my-sm-0 " type="submit">Search</button>
+    </form>
+</div>
+    </div>
+  </div>
+        <div class="body-background">
+    <div class="container-fluid d-flex justify-content-center align-items-center h-100">
+        <div class="card p-3 text-center py-4">
+            <h4>Create account</h4>
+            <div> <span>Already have an account?</span> <a href="#" class="text-decoration-none">Sign In</a> </div>
+            <div class="mt-3 px-3"> <input class="form-control" placeholder="Username"> </div>
+            <div class="input-group px-3 mt-3"> <input type="text" class="form-control" placeholder="First Name" aria-label="Username"> <span></span> <input type="text" class="form-control" placeholder="Last Name" aria-label="Server"> </div>
+            <div class="mt-3 px-3"> <input class="form-control" placeholder="E-mail"> </div>
+            <div class="mt-3 d-grid px-3"> <button class="btn btn-warning btn-block btn-signup text-uppercase"> <a class="button mybtn"href="bookbank.html" style="text-decoration:none;">Sign Up</a> </button> </div>
+            <div class="px-3">
+                <div class="mt-2 form-check d-flex flex-row"> <input class="form-check-input" type="checkbox" value="" id="services"> <label class="form-check-label ms-2" for="services"> I have read and agree to the terms. </label> </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-lg-5 col-md-6"><a href="index.html"><img src="LOGO.png"width="80%" height="67%"></a></div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                                <p>Don’t miss any updates of our new templates and extensions.!</p>
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email"><br/>
+                                    <button type="submit" class="btn btn-outline-warning mb-4"> Subscribe </button>
+                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                                <div class="f_social_icon">
+                                    <a href="#" class="fab fa-facebook"></a>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                    <a href="#" class="fab fa-linkedin"></a>
+                                    <a href="#" class="fab fa-pinterest"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">© Book Bank All rights reserved.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right">
+                            <p>Made with <i class="icon_heart"></i> in <a href="#" target="_blank">Janvi Sanghani</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
